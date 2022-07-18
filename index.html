@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-
+    <link rel="stylesheet" href="/landing-page/styles/main.css">
     <link rel="shortcut icon" type = "img/png" href="img/turn.png">
     <link rel = "Stylesheet" href = "styles.css">
 </head>
 <body id = "body">
     <header class="header-container">
-        <h2>Header Logo</h2>
-        <a href="">Header link one</a>
-        <a href="">Header link two</a>
-        <a href="">Header link three</a>
+        <h2 class="header-logo"><a href="index.html">Header Logo</a></h2>
+        <div class="header-link-container">
+            <a href="index.html">Header link one</a>
+            <a href="index.html">Header link two</a>
+            <a href="index.html">Header link three</a>  
+        </div>
     </header>
 
     <div class="main-title-container">
-        <h1 class="main-title">This website is awesome</h1>
-        <span class="main-title-subtext"><p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p></span>
-        <button class="main-title-button" type="submit">Sign up</button>
-        <div>
+        <div class="main-title">
+            <h1 class="main-title-title">This website is awesome</h1>
+            <span class="main-title-subtext"><p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p></span>
+            <button class="main-title-button" type="submit">Sign up</button>
+        </div>
+        <div class="main-title-image">
             <img src="/landing-page/images/main-page/main-title-image.jpg" alt="placeholder" width="520" height="236">
         </div>
     </div>
 
     <div class="main-info-container">
-        <h1>Some random information</h1>
+        <h1 class="main-info-container-title">Some random information</h1>
         <div class="main-info-images-container">
             <div class="main-info">
                 <img src="/landing-page/images/main-page/main-info-image.jpg" alt="main-info-image">
@@ -48,20 +52,23 @@
     </div>
 
     <div class="main-testimonial">
-        <span><p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice</p></span>;
+        <div class="main-testimony">
+            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice</p>
+            <h4 class="main-testimonial-author">-Thor, God of Thunder</h4>
+        </div>
     </div>
 
     <div class="main-footer-sign-up">
-        <div>
-            <h2>Call to action! It's time!</h2>
-            <p>Sign up for our product by clicking that button right over there!</p>
-        </div>
-        <div>
-            <button>Sign up</button>
-        </div>
+        <div class="main-footer-content">
+            <div class="main-footer-content-title">
+                <h2>Call to action! It's time!</h2>
+                <p>Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <div class="main-footer-content-button"><button>Sign up</button></div>
+        </div>   
     </div>
 
-    <footer>
+    <footer class="main-footer">
         <h3>Copyright &copy; The Odin Project 2022</h3>
     </footer>
 </body>
